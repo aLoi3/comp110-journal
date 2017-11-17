@@ -33,14 +33,14 @@ In addition to a rich story, the game becomes satisfying to play, although not f
 But not about the story now, let's concentrate on the shading and lighting here, shall we?
 
 \section{Old, but Gold}
-Techniques that are described in \cite{phong1975illumination} are old but are a good example of first shadings.
+Techniques that are described in \cite{phong1975illumination} are old but are good examples of first shadings.
 Some of them were not precise, but they were improved later on.
 Furthermore, human's eyes play a huge role in visualizing realistic graphics.
 ``\textit{Human visual perception and the fundamental laws of optics are considered in the development of a shading rule that provides better quality and increased realism in generated images.}"  \cite[p.~311]{phong1975illumination}.
 I assume this is worth mentioning, but not discussing a lot as this paper is aimed to talk about video games' graphics.
 So, there are a few shadings discussed in that paper.
 First of all, Warnock's shading.
-Two effects were simulated: ``\textit{Decreasing intesity of the reflected light from the object with the distance between the light source and the object}" \cite[p.~313]{phong1975illumination}
+Two effects were simulated: ``\textit{Decreasing intensity of the reflected light from the object with the distance between the light source and the object}" \cite[p.~313]{phong1975illumination}
 and ``\textit{Highlights created by specular reflection}" \cite[p.~313]{phong1975illumination}. 
 For more details, see \cite{phong1975illumination}.
 Second shading described in that paper is Newell, Newell, and Sancha's shading.
@@ -66,36 +66,51 @@ It produces good quality ``\textit{on most surfaces that change linearly, even i
 And the last one is Tsai and Shah (T\&S).
 ``\textit{Their method works very well on smooth objects with the light source close to the viewing direction}" \cite[p.~381]{zhang1994analysis}.
 It is also worth mentioning that all these techniques were made by using Shape from Shading (SFS) algorithms.
-This can be divided in to two groups: Global approaches and local approaches.
+This can be divided into two groups: Global approaches and local approaches.
 Global approaches can also be divided into global minimization approaches and global propagation approaches.
 
 \section{Ligting and shading in video games}
 Lighting and shading in video games make graphics look even prettier.
-This is made to fully immerse players into the game.
+This is made to fully immerse players in the game.
 It's not just to show how far can graphics be improved.
 This increases players' level of satisfaction, which they will surely approve.
 Although not everyone can be interested in examining every single detail.
 They would rather enjoy gameplay and game's mechanics.
-But this depends of a person itself.
+But this depends on a person itself.
 But seeing such details as, for example, scratches on a wall makes one happy.
 You understand that developers were truly giving their heart for this game.
 It's not just another casual game.
 It's something specific, which you want to see more often.
 Every time you notice some nice-looking details whether it's how lighting works or how accurate is shading, you are mentally satisfied.
-
+To realise that into a game, a novel technology was presented in 2003 \cite{iones2003fast}.
+``A novel, view-independent technology produces natural-looking lighting effects faster than radiosity and ray tracing.
+The approach is suited for 3D real-time interactive applications and production rendering." \cite[p.~54]{iones2003fast}
+This technology doesn't take much time to produce realistic images.
+Whereas radiosity and ray tracing are also ``require large amounts of memory and are difficult for a nonexpert to control." \cite[p.~54]{iones2003fast}
+A novel technology, in this case, is great for games as it doesn't take much time for a game to load.
+Players always look into fast-loadings and optimization, which makes the game even smoother.
+Although a lot of shading techniques are still not accurate enough to ``represent complicated materials that exist in the real world."\cite[p.~1]{mcauley2012practical}
+But they are reasonable for lower-end GPUs.
 
 \section{Conclusion}
+So, after all, Phong's shading, which was introduced in 1975 \cite{phong1975illumination} was realistic compared to other algorithms known at that time.
+This was a ``part of a technique for improving the appearance of images of curved surfaces" \cite[p.~192]{blinn1977models}.
+Although, as mentioned before, this is hardly used in modern video games.
+A lot of previous techniques were combined together for improvement.
+That's how more advanced shadings appeared.
+For video games, ray tracing and radiosity, or these two combined together, produce more realistic models of objects.
+But they have several issues.
+1) Time-consumption; 2) Require large amounts of memory; 3) Difficult to implement for inexperienced programmers.
+For these reasons, a novel technology was presented.
+It doesn't take much and is good for game's optimization.
+Although, surely, there are more techniques, which are much better than these.
+After all, a novel technology was presented in 2003, which is quite a long time ago.
+And game industry is a really fast-growing one.
+Every year we are introduced to more and more advanced technologies.
+That's why I can't claim that techniques that were introduced in this paper are the best ones.
+For the better understanding of lighting and shading nowadays, it needs more researching.
 
-\section{P.S.}
-This is incomplete draft, more stuff to be researched.
-Why ? I don't really know...
-Why am I writing all this? I also don't know.
-At least I'm studying something rather than just doing nothing...
-In addition, not all sources are referenced here.
-I have quite a few more, but don't know whether they are useful in this paper.
-Also, a lot of previous text isn't quite relevant to the topic.
-Just making sure that I pass...
-Also, don't assess this paragraph, please. Don't hurt me. No more.
+\newpage{}
 
 \bibliography{References}
 \bibliographystyle{ieeetr}
