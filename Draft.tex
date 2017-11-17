@@ -4,8 +4,9 @@
 \usepackage[none]{hyphenat}
 \usepackage{setspace}
 \doublespace
+\usepackage{filecontents}
 
-\title{Different shading techniques for video games.}
+\title{Very first shadings and their improvements into video games.}
 \subtitle{COMP110 - Research Journal}
 \author{1702208}
 \date{2017-11-08}
@@ -20,42 +21,81 @@
 There are a lot of shading techniques nowadays.
 Some of them are pretty old, but still capable to improve on.
 Those are discussed in B. T. Phong's paper published in 1975 \cite{phong1975illumination}.
-Although there are more newer papers that discuss several variations of shadings \cite{zhang1994analysis}.
+Although there are newer papers that discuss several variations of shadings \cite{zhang1994analysis}.
 Many of them are usable in games, which are also fast and realistic \cite{iones2003fast}.
 In addition, some can be combined to produce better shading for objects \cite{blinn1976texture}.
 A good shading technique in modern video games is a must nowadays.
 This will be discussed later in this paper to make it more constructed, of course.
 Moreover, lightings must fit the day-night cycle to make it more realistic and immersive.
-Because most players look into graphics rather than gameplay, this makes the development team concentrate on realistic environment.
-Thus, a lot of games nowadays are made exclusively to make players fully immerse into the given environment.
-In addition with a rich story, the game becomes satisfying to play, although not for everyone.
+Because most players look into graphics rather than gameplay, this makes the development team concentrate on the realistic environment.
+Thus, a lot of games nowadays are developed exclusively to make players fully immerse in the given environment.
+In addition to a rich story, the game becomes satisfying to play, although not for everyone.
 But not about the story now, let's concentrate on the shading and lighting here, shall we?
 
 \section{Old, but Gold}
-Techniques that are described in \cite{phong1975illumination} are old, but are a good example of beginning shadings. TODO: look how to cite in this way
-Some of them were not precise, but they were improved lated on.
+Techniques that are described in \cite{phong1975illumination} are old but are a good example of first shadings.
+Some of them were not precise, but they were improved later on.
 Furthermore, human's eyes play a huge role in visualizing realistic graphics.
-``Human visual perception and the fundamental laws of optics are considered in the development of a shading rule that provides better quality and increased realism in generated images."  \cite{phong1975illumination} TODO: cite appropriately
+``\textit{Human visual perception and the fundamental laws of optics are considered in the development of a shading rule that provides better quality and increased realism in generated images.}"  \cite[p.~311]{phong1975illumination}.
 I assume this is worth mentioning, but not discussing a lot as this paper is aimed to talk about video games' graphics.
 So, there are a few shadings discussed in that paper.
 First of all, Warnock's shading.
-Two effect were simulated: ``Decreasing intesity of the reflected light from the object with the distance between the light source and the object"
-and ``Highlights created by specular reflection". TODO: appropriate citation
-For more details, see \cite{phong1975illumination}
-Second shading described in that paper is Newell, Newell , and Sancha's shading.
+Two effects were simulated: ``\textit{Decreasing intesity of the reflected light from the object with the distance between the light source and the object}" \cite[p.~313]{phong1975illumination}
+and ``\textit{Highlights created by specular reflection}" \cite[p.~313]{phong1975illumination}. 
+For more details, see \cite{phong1975illumination}.
+Second shading described in that paper is Newell, Newell, and Sancha's shading.
 This type of shading presents transparency and highlights.
-It also highlight the reflection of light.
+It also highlights the reflection of light.
 It is not as accurate as the real object would look like, but this will later be improved.
 A good sample for that is Gouraud's shading.
 His technique is more advanced.
 This technique improved the shading itself sufficiently.
-But ``problems still exist, however, one of which is the apparent discontinuity across polygon edges." TODO: appropriate citation
+But ``\textit{problems still exist, however, one of which is the apparent discontinuity across polygon edges.}" \cite[p.~314]{phong1975illumination}.
 After all, this has all been improved by now, and these techniques are unlikely to be used in modern games.
 
 \section{Several different shading techniques}
-I'm surely not gonna discuss all 8 of them, but some are worth mentioning, I guess.
-I still haven't read all of the techniques provided in \cite{zhang1994analysis}, but I'll try to make some conclusions.
+I'm surely not gonna discuss all 8 of them, but some are worth mentioning.
+Some of the techniques provided in \cite{zhang1994analysis} have been considered more accurate.
+However, each has its error, which means none of these techniques is perfect, of course.
+More precise and fast are a few of them.
+First are Lee and Rosenfeld (L\&R).
+``\textit{Their method estimates the depth of an image using local spherical assumption and intensity derivatives}" \cite[p.~380]{zhang1994analysis}.
+Although this method is ``\textit{unsuitable for non-spherical surfaces}".
+Second - Pentland (P); This is totally different one.
+It produces good quality ``\textit{on most surfaces that change linearly, even if the surface has a naturally varying surface such as person's face}" \cite[p.~380]{zhang1994analysis}.
+And the last one is Tsai and Shah (T\&S).
+``\textit{Their method works very well on smooth objects with the light source close to the viewing direction}" \cite[p.~381]{zhang1994analysis}.
+It is also worth mentioning that all these techniques were made by using Shape from Shading (SFS) algorithms.
+This can be divided in to two groups: Global approaches and local approaches.
+Global approaches can also be divided into global minimization approaches and global propagation approaches.
 
+\section{Ligting and shading in video games}
+Lighting and shading in video games make graphics look even prettier.
+This is made to fully immerse players into the game.
+It's not just to show how far can graphics be improved.
+This increases players' level of satisfaction, which they will surely approve.
+Although not everyone can be interested in examining every single detail.
+They would rather enjoy gameplay and game's mechanics.
+But this depends of a person itself.
+But seeing such details as, for example, scratches on a wall makes one happy.
+You understand that developers were truly giving their heart for this game.
+It's not just another casual game.
+It's something specific, which you want to see more often.
+Every time you notice some nice-looking details whether it's how lighting works or how accurate is shading, you are mentally satisfied.
+
+
+\section{Conclusion}
+
+\section{P.S.}
+This is incomplete draft, more stuff to be researched.
+Why ? I don't really know...
+Why am I writing all this? I also don't know.
+At least I'm studying something rather than just doing nothing...
+In addition, not all sources are referenced here.
+I have quite a few more, but don't know whether they are useful in this paper.
+Also, a lot of previous text isn't quite relevant to the topic.
+Just making sure that I pass...
+Also, don't assess this paragraph, please. Don't hurt me. No more.
 
 \bibliography{References}
 \bibliographystyle{ieeetr}
